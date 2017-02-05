@@ -1,0 +1,34 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+ <!-- Margins -->
+    <!-- Line text--> <dimen name="verticalLineMarginTop">24dp</dimen>
+    <!-- teams text--> <dimen name="teamTextMarginTop">24dp</dimen>
+    <!-- scores text -->  <dimen name="scoreTextMarginTop">18dp</dimen>
+    <!-- scores value --><dimen name="scoreValueTextMarginTop">10dp</dimen>
+    <!-- scores value --><dimen name="scoreValueTextMarginBottom">24dp</dimen>
+
+  <!-- buttons - for all-->
+    <dimen name="buttonMarginTop">24dp</dimen>
+    <dimen name="buttonMarginBottom">8dp</dimen>
+    <dimen name="buttonMarginLeft">24dp</dimen>
+    <dimen name="buttonMarginRight">24dp</dimen>
+    <!-- reset button -->
+    <dimen name="resetButtonMarginBottom">24dp</dimen>
+    <dimen name="resetButtonMarginTop">24dp</dimen>
+  <!-- / buttons -->
+ <!-- / Margins -->
+
+ <!-- Text sizes -->
+    <!-- Teams text -->  <dimen name="teamTextSize">20dp</dimen>
+    <!-- Scores  text-->  <dimen name="scoreTextSize">30dp</dimen>
+    <!-- Scores value -->  <dimen name="scoreValueTextSize">50dp</dimen>
+    <!-- offsides text --><dimen name="offsideTextSize">15dp</dimen>
+    <!-- penalties text --><dimen name="penaltiesTextSize">15dp</dimen>
+    <!-- offsides value --><dimen name="offsideValueTextSize">20dp</dimen>
+    <!-- penalties value --><dimen name="penaltiesValueTextSize">20dp</dimen>
+    <!-- button text --><dimen name="buttonTextSize">20dp</dimen>
+ <!-- /Text sizes -->
+</resources>

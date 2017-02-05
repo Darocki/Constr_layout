@@ -1,0 +1,11 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <!-- Primary theme color of the app (sets background color of app bar) -->
+        <item name="colorPrimary">#FF9800</item>
+        <!-- Background color of buttons in the app -->
+        <item name="colorButtonNormal">#FF9800</item>
+        <color name="color_TeamName_Offside_Penalty">#616161</color>
+        <color name="color_Scores_Offside_Penalty_Value">#000000</color>
+    </style>
+</resources>

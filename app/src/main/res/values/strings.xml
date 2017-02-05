@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">IceHockeyCounter</string>
+    <string name="team_A_header">Team A</string>
+    <string name="team_B_header">Team B</string>
+    <string name="scores_text_header">Scores</string>
+    <string name="score_value">0</string>
+    <string name="offsides_text_header">offsides</string>
+    <string name="penalties_text_header">penalties</string>
+    <string name="btn_1_point_txt">+1 Point</string>
+    <string name="btn_1_offside_txt">+1 Offside</string>
+    <string name="btn_1_penalty_txt">+1 Penalty</string>
+    <string name="btn_reset_txt">reset</string>
+
+
+</resources>

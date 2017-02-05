@@ -1,0 +1,317 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    android:scrollbars = "vertical"
+    tools:context="com.example.android.courtcounter.MainActivity">
+
+ <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+    <LinearLayout
+        android:id="@+id/m_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal">
+
+     <LinearLayout
+            android:id="@+id/activity_main"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/teamTextMarginTop"
+                android:gravity="center"
+                android:text="@string/team_A_header"
+                android:textColor="@color/color_TeamName_Offside_Penalty"
+                android:textSize="@dimen/teamTextSize"
+                android:fontFamily="sans-serif-medium" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/scoreTextMarginTop"
+                android:gravity="center"
+                android:text="@string/scores_text_header"
+                android:textSize="@dimen/scoreTextSize"
+                android:textColor="@color/color_Scores_Offside_Penalty_Value"
+                android:fontFamily="sans-serif-light" />
+
+            <TextView
+                android:id="@+id/team_a_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/scoreValueTextMarginTop"
+                android:layout_marginBottom="@dimen/scoreValueTextMarginBottom"
+                android:gravity="center"
+                android:text="@string/score_value"
+                android:textAllCaps="true"
+                android:textSize="@dimen/scoreValueTextSize"
+                android:textColor="@color/color_Scores_Offside_Penalty_Value"
+                android:fontFamily="sans-serif-light" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical"
+               android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/offsides_text_header"
+                    android:textAllCaps="true"
+                    android:textSize="@dimen/offsideTextSize"
+                    android:gravity="center"
+                    android:textColor="@color/color_TeamName_Offside_Penalty"
+                    android:fontFamily="sans-serif-medium" />
+
+                 <TextView
+                     android:id="@+id/team_a_offside"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:text="@string/score_value"
+                     android:textSize="@dimen/offsideValueTextSize"
+                     android:textColor="@color/color_Scores_Offside_Penalty_Value"
+                     android:fontFamily="sans-serif-medium"
+                     android:gravity="center" />
+            </LinearLayout>
+         <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/penalties_text_header"
+                    android:textAllCaps="true"
+                    android:gravity="center"
+                    android:textSize="@dimen/penaltiesTextSize"
+                    android:textColor="@color/color_TeamName_Offside_Penalty"
+                    android:fontFamily="sans-serif-medium" />
+                <TextView
+                    android:id="@+id/team_a_penalty"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/score_value"
+                    android:textSize="@dimen/penaltiesValueTextSize"
+                    android:textColor="@color/color_Scores_Offside_Penalty_Value"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="center" />
+            </LinearLayout>
+        </LinearLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/buttonMarginTop"
+                android:layout_marginLeft="@dimen/buttonMarginLeft"
+                android:layout_marginRight="@dimen/buttonMarginRight"
+                android:layout_marginBottom="@dimen/buttonMarginBottom"
+                android:onClick="addOneForTeamA"
+                android:text="@string/btn_1_point_txt"
+                android:textAllCaps="true"
+                android:textSize="@dimen/buttonTextSize" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/buttonMarginLeft"
+                android:layout_marginRight="@dimen/buttonMarginRight"
+                android:layout_marginBottom="@dimen/buttonMarginBottom"
+                android:onClick="addOffsideForTeamA"
+                android:text="@string/btn_1_offside_txt"
+                android:textAllCaps="true"
+               android:textSize="@dimen/buttonTextSize"  />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/buttonMarginLeft"
+                android:layout_marginRight="@dimen/buttonMarginRight"
+                android:layout_marginBottom="@dimen/buttonMarginBottom"
+                android:onClick="addPenaltyForTeamA"
+                android:text="@string/btn_1_penalty_txt"
+                android:textAllCaps="true"
+                android:textSize="@dimen/buttonTextSize" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/verticalLineMarginTop"
+            android:background="@android:color/darker_gray" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+        >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/teamTextMarginTop"
+                android:gravity="center"
+                android:text="@string/team_B_header"
+                android:textColor="@color/color_TeamName_Offside_Penalty"
+                android:textSize="20dp"
+                android:fontFamily="sans-serif-medium" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/scoreTextMarginTop"
+                android:gravity="center"
+                android:text="@string/scores_text_header"
+                android:textSize="@dimen/scoreTextSize"
+                android:textColor="@color/color_Scores_Offside_Penalty_Value"
+                android:fontFamily="sans-serif-light"
+                android:singleLine="false" />
+
+            <TextView
+                android:id="@+id/team_b_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/scoreValueTextMarginTop"
+                android:layout_marginBottom="@dimen/scoreValueTextMarginBottom"
+                android:gravity="center"
+                android:text="@string/score_value"
+                android:textSize="@dimen/scoreValueTextSize"
+                android:textColor="@color/color_Scores_Offside_Penalty_Value"
+                android:fontFamily="sans-serif-light" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                  >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/offsides_text_header"
+                        android:textAllCaps="true"
+                        android:textSize="@dimen/offsideTextSize"
+                        android:gravity="center"
+                        android:textColor="@color/color_TeamName_Offside_Penalty"
+                        android:fontFamily="sans-serif-medium" />
+
+                    <TextView
+                        android:id="@+id/team_b_offside"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/score_value"
+                        android:textSize="@dimen/offsideValueTextSize"
+                        android:textColor="@color/color_Scores_Offside_Penalty_Value"
+                        android:fontFamily="sans-serif-medium"
+                        android:gravity="center" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+                  <TextView
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:text="@string/penalties_text_header"
+                      android:textAllCaps="true"
+                      android:textSize="@dimen/penaltiesTextSize"
+                      android:gravity="center"
+                      android:textColor="@color/color_TeamName_Offside_Penalty"
+                      android:fontFamily="sans-serif-medium" />
+                  <TextView
+                      android:id="@+id/team_b_penalty"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:text="@string/score_value"
+                      android:gravity="center"
+                      android:textSize="@dimen/penaltiesValueTextSize"
+                      android:textColor="@color/color_Scores_Offside_Penalty_Value"
+                      android:fontFamily="sans-serif-medium" />
+                </LinearLayout>
+            </LinearLayout>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/buttonMarginTop"
+                    android:layout_marginLeft="@dimen/buttonMarginLeft"
+                    android:layout_marginRight="@dimen/buttonMarginRight"
+                    android:layout_marginBottom="@dimen/buttonMarginBottom"
+                android:onClick="addOneForTeamB"
+            android:text="@string/btn_1_point_txt"
+            android:textAllCaps="true"
+            android:textSize="@dimen/buttonTextSize" />
+
+            <Button
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="@dimen/buttonMarginLeft"
+               android:layout_marginRight="@dimen/buttonMarginRight"
+               android:layout_marginBottom="@dimen/buttonMarginBottom"
+               android:onClick="addOffsideForTeamB"
+               android:text="@string/btn_1_offside_txt"
+               android:textAllCaps="true"
+               android:textSize="@dimen/buttonTextSize"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/buttonMarginLeft"
+                android:layout_marginRight="@dimen/buttonMarginRight"
+                android:layout_marginBottom="@dimen/buttonMarginBottom"
+                android:onClick="addPenaltyForTeamB"
+                android:text="@string/btn_1_penalty_txt"
+                android:textAllCaps="true"
+                android:textSize="@dimen/buttonTextSize" />
+
+        </LinearLayout>
+ </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:layout_alignParentBottom="true"
+    android:layout_below="@id/m_layout">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/resetButtonMarginTop"
+        android:layout_marginBottom="@dimen/resetButtonMarginBottom"
+        android:onClick="resetScore"
+        android:text="@string/btn_reset_txt"
+        android:textAllCaps="true"
+        android:textSize="@dimen/buttonTextSize" />
+
+</LinearLayout>
+
+</RelativeLayout>
+    </ScrollView>
